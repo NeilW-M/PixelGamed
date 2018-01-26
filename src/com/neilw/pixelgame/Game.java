@@ -13,7 +13,7 @@ public class Game extends JFrame implements Runnable
 {
 	private static final long serialVersionUID = 1L;
 	
-	public static int alpha = 0xFFFF00DC;
+	public static int alpha = 0xFFFF00FF;
 	
 	/**
 	 * The Canvas that contains the BufferStrategy and is painted on
@@ -26,7 +26,7 @@ public class Game extends JFrame implements Runnable
 	/**
 	 * A test image that is defined in the constructor and rendered to the screen
 	 */
-	private BufferedImage testImage;
+	//private BufferedImage testImage;
 	private Sprite testSprite;
 	private SpriteSheet sheet;
 	/**
@@ -61,15 +61,15 @@ public class Game extends JFrame implements Runnable
 		renderer = new RenderHandler(getWidth(), getHeight());
 
 		//Loads the image for the sprite sheet
-		BufferedImage sheetImage = loadImage("Tiles1.png");
+		BufferedImage sheetImage = loadImage("rogueLike.png");
 		sheet = new SpriteSheet(sheetImage);
 		sheet.loadSprites(16, 16);
 		
 		//Sets the testImage equal to "GrassTile.png"
-		testImage = loadImage("GrassTile.png");
+		//testImage = loadImage("GrassTile.png");
 		
 		
-		testSprite = sheet.getSprite(4, 1);
+		testSprite = sheet.getSprite(0, 3);
 		
 		//Creates a testRectangle with borderWidth(hWidth, vWidth, Color)
 		testRectangle.generateGraphics(5, 5, 123123);
