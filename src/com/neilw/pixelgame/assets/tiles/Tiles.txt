@@ -1,0 +1,11 @@
+//TilesName-SpriteX-SpriteY
+Grass1-5-0
+Dirt1-6-0
+Stone1-7-0
+Sand1-8-0
+Cobble1-9-0
+Water1-0-0
+Water2-1-0
+LeftTopWaterGrassCorner-2-0
+MiddleTopWaterGrass-3-0
+RightTopWaterGrassCorner-4-0
